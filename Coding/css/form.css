@@ -1,0 +1,78 @@
+* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat927.png), auto;}
+
+@font-face {
+    font-family: Kalam;
+    src: url(../fonts/Kalam-Bold.ttf);
+  }
+@font-face {
+    font-family: PermMarker;
+    src: url(../fonts/PermanentMarker-Regular.ttf);
+  }
+  
+body{
+    background-image: url(../images/rgb.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 1%;
+}
+h1{
+    font-family: PermMarker;
+    font-size: 35px;
+    text-decoration: overline;
+}
+h1,tr{
+    text-align: center;
+}
+table,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    background-color: #c98d7291;
+}
+.center{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+tr,td{
+    width: 50%;
+}
+.bold_r{
+    font-family: Kalam;
+    font-weight: bold;
+    text-align: right;
+    min-width: 297px;
+    min-height: 160px;
+}
+.ninety_five{
+    width: 95%;
+}
+.left{
+    text-align: left;
+}
+#radio{
+    accent-color: rgb(255, 45, 146);
+}
+input, select, textarea{
+    background-color: #efe6be94;
+}
+
+/* h1 glow design */
+h1{
+    cursor: pointer;
+    color: black;
+    transition: .5s;
+    text-shadow: 0 0 5px white,
+                 0 0 25px white,
+                 0 0 50px white,
+                 0 0 100px white;
+  }
+h1:hover{
+    color: white;
+    text-shadow: 0 0 5px black,
+                 0 0 25px black,
+                 0 0 50px black,
+                 0 0 100px black;
+}

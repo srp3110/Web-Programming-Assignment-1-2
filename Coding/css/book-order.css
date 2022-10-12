@@ -1,0 +1,93 @@
+* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat927.png), auto;}
+
+@font-face {
+  font-family: Kalam;
+  src: url(../fonts/Kalam-Bold.ttf);
+}
+@font-face {
+  font-family: PermMarker;
+  src: url(../fonts/PermanentMarker-Regular.ttf);
+}
+
+body{
+  background-image: url(../images/rainbow.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 1%
+}
+h1{
+  font-family: PermMarker;
+  font-size: 35px;
+}
+table,tr,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+table{
+  background-color: rgb(95, 158, 160);
+}
+.header{
+  font-family: Kalam;
+  font-weight: bold;
+  text-align: center;
+}
+.header, .footer{
+  background-color: skyblue;
+}
+td:last-of-type input{
+  background-color: silver;
+}
+td:last-of-type input, td:nth-last-child(2) input, td:nth-last-child(3) input, td:first-child{
+  text-align: right;
+}
+.right{
+  text-align: right;
+}
+.big{
+  font-size: 18pt;
+}
+.yellow:hover{
+  background-color: yellow;
+}
+a{
+  font-family: Handlee;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+.ref{
+  width: 1224.190px;
+  height: 283px;
+  text-align: center;
+}
+
+/* disable increment arrows chrome/safari */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+  -webkit-appearance:none;
+}
+/* disableincrement arrows firefox */
+input[type="number"]{
+  -moz-appearance:textfield;
+}
+
+/* h1 glow design */
+h1{
+  cursor: pointer;
+  color: white;
+  transition: .5s;
+  text-decoration: overline;
+  text-shadow: 0 0 5px black,
+                 0 0 25px black,
+                 0 0 50px black,
+                 0 0 100px black;
+}
+h1:hover{
+  color: black;
+  text-shadow: 0 0 5px white,
+               0 0 25px white,
+               0 0 50px white,
+               0 0 100px white;
+}

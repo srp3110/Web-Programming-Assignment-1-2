@@ -1,0 +1,95 @@
+* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat927.png), auto;}
+
+@font-face{
+    font-family: Fredericka;
+    src: url(../fonts/FrederickatheGreat-Regular.ttf);
+  }
+@font-face {
+    font-family: Kalam;
+    src: url(../fonts/Kalam-Bold.ttf);
+  }
+@font-face {
+    font-family: Handlee;
+    src: url(../fonts/Handlee-Regular.ttf);
+  }
+  
+body{
+    background-color: #9c7b5b;
+    padding: 1%;
+}
+h1{
+    font-family: Fredericka;
+    font-size: 45px;
+}
+h1, div{
+    text-align: center;
+}
+.card{
+    width: 280px;
+    height:230px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.card_image{
+    margin: -110px 0px 0px -65px;
+}
+.segment{
+    font-family: Kalam;
+    font-size: 27px;
+    text-align: center;
+    text-decoration: underline;
+}
+p, li, a{
+    font-family: Handlee;
+    font-size: 18px;
+}
+a{
+    margin: 1%;
+    color: white;
+}
+
+/* h1 gradient design */
+h1{
+    background: linear-gradient(to right, #fcf700 10%, rgb(255, 117, 4) 50%, #fcf700 90%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{ 
+    to{
+        background-position: 200% center;
+}}
+
+/* .segment glow design */
+.segment{
+    cursor: pointer;
+    color: black;
+    transition: .5s;
+}
+.segment:hover{
+    color: black;
+    text-shadow: 0 0 5px #fcf700,
+                 0 0 25px rgb(255, 117, 4),
+                 0 0 50px #fcf700,
+                 0 0 100px #fcf700;
+}
+
+/* highlight */
+::selection{
+    color: white;
+}
+h2::selection{
+    background: rgb(165, 81, 42);
+}
+li::selection{
+    background: rgb(255, 117, 4);
+}
+p::selection{
+    background: rgb(255, 117, 4);
+}
+a::selection{
+    background: rgb(255, 117, 4);
+}

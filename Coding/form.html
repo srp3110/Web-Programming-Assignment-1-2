@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Form</title>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="shortcut icon" href="/images/pika.png" type="image/x-icon">
+</head>
+<body>                  
+    <h1>Student Details</h1>
+    <form action="form-submitted.html">
+        <table class="center">
+            <tr>
+                <td class="bold_r">Student ID</td>
+                <td><input class="ninety_five" type="text"></td>
+            </tr>
+            <tr>
+                <td class="bold_r">Name</td>
+                <td><input class="ninety_five" type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td class="bold_r">Gender</td>
+                <td class="left">
+                    <input type="radio" name="radioElement" id="radio" value="Male">
+                    Male
+                    <input type="radio" name="radioElement" id="radio" value="Female">
+                    Female
+                    <input type="radio" name="radioElement" id="radio" value="Rathernotsay" checked>
+                    Rather not say
+                </td>
+            </tr>
+            <tr>
+                <td class="bold_r">Favorite Module</td>
+                <td><select class="ninety_five" name="module" id="module">
+                    <option disabled selected>
+                        Please choose a module...
+                        <option value="ItC">
+                            Introduction to Computing
+                        </option>
+                        <option value="WP">
+                            Web Programming
+                        </option>
+                        <option value="ItA">
+                            Introduction to Algorithm
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="bold_r">Notes</td>
+                <td class="left">
+                    <textarea name="notes" id="notes" cols="35" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="100%">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </body>
+    </html>
