@@ -7,6 +7,7 @@
     <title>Book Ordering System</title>
     <link rel="stylesheet" href="css/book-order.css">
     <link rel="shortcut icon" href="/images/pika.png" type="image/x-icon">
+    <script src="../Coding/JavaScript/book-order.js"></script>
 </head>
 <body>
     <h1>Book Ordering System</h1>
@@ -142,8 +143,8 @@
                                     <td><input type="number" readonly value="0.00" id="total_5"></td>
                                 </tr>
                                 <tr class="footer">
-                                    <td colspan="5"><input type="button" value="Calculate Grand Total Price"></td>
-                                    <td class="right" colspan="2"><input class="big" type="number" readonly value="0.00"></td>
+                                    <td colspan="5"><input type="button" value="Calculate Grand Total Price" id="calculateGrandTotal" onclick="calculateTotal()"></td>
+                                    <td class="right" colspan="2" id="sumGrandTotal"><input class="big" type="number" readonly value="0.00"></td>
                                 </tr>
                             </table>
                         </div>
