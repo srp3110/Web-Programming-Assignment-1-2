@@ -58,7 +58,7 @@ function grandTotal(){
     ttl_5 = parseFloat(ttl_5);
     let g_ttl = ttl_1 + ttl_2 + ttl_3 + ttl_4 + ttl_5;
     g_ttl = parseFloat(g_ttl).toFixed(2);
-document.getElementById("sumGrandTotal");
+    document.getElementById("sumGrandTotal").value = g_ttl;
 }
 
 function calculateTotal(){
