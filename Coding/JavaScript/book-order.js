@@ -10,35 +10,30 @@ function calculate(unt_prc, qty, ttl){
     document.getElementById(ttl).value = xy;
 }
 function first_row(){
-    let row = 1;
     let unt_prc = "unit_price_1";
     let qty = "quantity_1";
     let ttl = "total_1";
     calculate(unt_prc, qty, ttl);
 }
 function second_row(){
-    let row = 2;
     let unt_prc = "unit_price_2";
     let qty = "quantity_2";
     let ttl = "total_2";
     calculate(unt_prc, qty, ttl);
 }
 function third_row(){
-    let row = 3;
     let unt_prc = "unit_price_3";
     let qty = "quantity_3";
     let ttl = "total_3";
     calculate(unt_prc, qty, ttl);
 }
 function fourth_row(){
-    let row = 4;
     let unt_prc = "unit_price_4";
     let qty = "quantity_4";
     let ttl = "total_4";
     calculate(unt_prc, qty, ttl);
 }
 function fifth_row(){
-    let row = 5;
     let unt_prc = "unit_price_5";
     let qty = "quantity_5";
     let ttl = "total_5";
