@@ -70,4 +70,4 @@ function calculateTotal(){
     grandTotal()
 }
 
-document.getElementById("calculateGrandTotal").onclick = calculateTotal();
+// document.getElementById("calculateGrandTotal").onclick = calculateTotal();
