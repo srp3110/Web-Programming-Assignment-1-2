@@ -3,11 +3,11 @@ function calculateTotal(){
     while (counter_1 <= 5) {
         if (document.getElementById(`price_${counter_1}`).value < 0) {
             negativeValue = true;
-            let x = prompt("ERROR: Unit Price value cannot be negative. Enter a valid value for the unit price.")
+            let x = prompt("ERROR: Unit Price value cannot be negative. Enter a valid value for UNIT PRICE!")
             document.getElementById(`price_${counter_1}`).value = x;
         } if (document.getElementById(`quantity_${counter_1}`).value < 0) {
             negativeValue = true;
-            let y = prompt("ERROR: Quantity value cannot be negative. Enter a valid value for the quantity.")
+            let y = prompt("ERROR: Quantity value cannot be negative. Enter a valid value for QUANTITY!")
             document.getElementById(`quantity_${counter_1}`).value = y;
         }
         counter_1++
