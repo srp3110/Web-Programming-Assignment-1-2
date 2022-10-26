@@ -7,6 +7,7 @@
     <title>Book Ordering System</title>
     <link rel="stylesheet" href="css/book-order.css">
     <link rel="shortcut icon" href="images/pika.png" type="image/x-icon">
+    <script src="../Coding/JavaScript/book-order.js"></script>
     <script type="text/javascript">
         let grandTotalPrice = 0;
         function calcDiscount() {
@@ -15,12 +16,13 @@
             discountPrice = discountPrice.toFixed(2);
             alert(`The discount price is ${discountPrice}`);
         }
+        
         function discountButton() {
             grandTotalPrice = document.getElementById("sumGrandTotal").value;
             if (grandTotalPrice > 250) {
-                document.getElementById("discountButton").style.visibility = "visible"
+                document.getElementById("discountButton").style.visibility = "visible";
             } else {
-                document.getElementById("discountButton").style.visibility = "hidden"
+                document.getElementById("discountButton").style.visibility = "hidden";
             }
         }
     </script>
@@ -173,6 +175,5 @@
     <div class="ref">
         <a href="index.html">Go To Homepage</a>
     </div>
-    <script src="../Coding/JavaScript/book-order.js"></script>
 </body>
 </html>
