@@ -7,6 +7,23 @@
     <title>Book Ordering System</title>
     <link rel="stylesheet" href="css/book-order.css">
     <link rel="shortcut icon" href="images/pika.png" type="image/x-icon">
+    <script type="text/javascript">
+        let grandTotalPrice = 0;
+        function calcDiscount() {
+            grandTotalPrice = document.getElementById("sumGrandTotal").value;
+            discountPrice = 0.9 * grandTotalPrice;
+            discountPrice = discountPrice.toFixed(2);
+            alert(`The discount price is ${discountPrice}`);
+        }
+        function discountButton() {
+            grandTotalPrice = document.getElementById("sumGrandTotal").value;
+            if (grandTotalPrice > 250) {
+                document.getElementById("discountButton").style.visibility = "visible"
+            } else {
+                document.getElementById("discountButton").style.visibility = "hidden"
+            }
+        }
+    </script>
 </head>
 <body>
     <h1>Book Ordering System</h1>
@@ -147,7 +164,7 @@
                 <td><input type="number" readonly value="0.00" id="total_5"></td>
             </tr>
             <tr class="footer">
-                <td colspan="5"><input type="button" value="Calculate Grand Total Price" id="calculateGrandTotal" onclick="calculateTotal()"></td>
+                <td colspan="5"><input type="button" value="View Price After 10% Discount" id="discountButton" onclick="discountButton(), calcDiscount()"> <input type="button" value="Calculate Grand Total Price" id="calculateGrandTotal" onclick="calculateTotal()"></td>
                 <td class="right" colspan="2"><input class="big" type="number" readonly value="0.00" id="sumGrandTotal"></td>
             </tr>
         </table>

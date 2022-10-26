@@ -11,17 +11,17 @@ function calculateTotal(){
         counter_1++
     }
     if (negativeValue == true) {
-        alert("Invalid value detected")
+        alert("Invalid value detected");
     }
     while (counter_2 <= 5) {
         price = parseFloat(document.getElementById(`price_${counter_2}`).value);
-        price = price.toFixed(2)
+        price = price.toFixed(2);
         quantity = parseFloat(document.getElementById(`quantity_${counter_2}`).value);
-        quantity = quantity.toFixed(0)
+        quantity = quantity.toFixed(0);
         total = price * quantity;
         document.getElementById(`total_${counter_2}`).value = total.toFixed(2);
         calcGrandTotal += total;
         document.getElementById("sumGrandTotal").value = calcGrandTotal;
-        counter_2++;
+        counter_2++
     }
 }
