@@ -91,3 +91,7 @@ h1:hover{
                0 0 50px white,
                0 0 100px white;
 }
+
+#discountButton{
+  visibility: hidden;
+}

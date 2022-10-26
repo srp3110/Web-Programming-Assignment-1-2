@@ -16,7 +16,6 @@
             discountPrice = discountPrice.toFixed(2);
             alert(`The discount price is ${discountPrice}`);
         }
-        
         function discountButton() {
             grandTotalPrice = document.getElementById("sumGrandTotal").value;
             if (grandTotalPrice > 250) {
@@ -166,7 +165,7 @@
                 <td><input type="number" readonly value="0.00" id="total_5"></td>
             </tr>
             <tr class="footer">
-                <td colspan="5"><input type="button" value="View Price After 10% Discount" id="discountButton" onclick="discountButton(), calcDiscount()"> <input type="button" value="Calculate Grand Total Price" id="calculateGrandTotal" onclick="calculateTotal()"></td>
+                <td colspan="5"><input type="button" value="View Price After 10% Discount" id="discountButton" onclick="calcDiscount()"> <input type="button" value="Calculate Grand Total Price" id="calculateGrandTotal" onclick="calculateTotal(), discountButton()"></td>
                 <td class="right" colspan="2"><input class="big" type="number" readonly value="0.00" id="sumGrandTotal"></td>
             </tr>
         </table>
